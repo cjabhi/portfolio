@@ -1,0 +1,105 @@
+.contactbox{
+    position: absolute;
+    top: 50%;
+    /* left: 17%; */
+    left: auto;
+    width: 80%;
+    background-color: rgba(35,2,2,1);
+    opacity: 0.6;
+    backdrop-filter: blur(1rem);
+    min-width: 360px;
+}
+.formbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    color: aliceblue;
+}
+.formbox h2{
+    font-size: 2rem;
+    align-items: center;
+
+}
+.formbox .input-box{
+    position: relative;
+    width: 90%;
+    height: 3rem;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+.formbox .input-box input{
+    height: 100%;
+    width: 100%;
+    margin-inline: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+    font-weight: 700;
+    color: rgb(255,255,255);
+
+}
+.tbox{
+    width: 90%;
+}
+.tbox textarea{
+    height: 6rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+    font-weight: 600;
+    color: aquamarine;
+    padding: 6px;
+    margin-top: 30px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.1drem;
+    font-weight: 500;
+    transition: 0.4s ease;
+    pointer-events: none;
+
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    cursor: pointer;
+    top: -6px;
+}
+.form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+@media screen and (max-width:500px) {
+    .contactbox{
+        top:50%;
+        margin-top: 20px;
+    }
+}
+.parentbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 90%;
+}
+
+form .btn{
+    margin-bottom: 12px;
+}

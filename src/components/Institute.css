@@ -1,0 +1,32 @@
+.inbox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    border-bottom: 3px solid white;
+    margin-top: 10px;
+}
+.image
+{
+    width: fit-content;
+}
+.image img{
+    width: 80%;
+    max-height: 250px;
+    min-width: 350px;
+    border: 2px solid antiquewhite;
+}
+.description{
+    width: 45%;
+    min-width: 350px;
+    /* width: 80%; */
+    text-align: justify;
+}
+.education{
+    background-color: rgba(35,2,2,0.5);
+    opacity: 0.6;
+    position: absolute;
+    top: 52%;
+}
